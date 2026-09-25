@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects Overview</title>
+    <style>
+        /* 1. Load Alte Haas Grotesk */
+        @font-face {
+            font-family: 'Alte Haas Grotesk';
+            src: url('fonts/AlteHaasGroteskRegular.woff2') format('woff2'),
+                 url('fonts/AlteHaasGroteskRegular.woff') format('woff'),
+                 url('fonts/AlteHaasGroteskRegular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Alte Haas Grotesk';
+            src: url('fonts/AlteHaasGroteskBold.woff2') format('woff2'),
+                 url('fonts/AlteHaasGroteskBold.woff') format('woff'),
+                 url('fonts/AlteHaasGroteskBold.ttf') format('truetype');
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        /* 2. Base Setup */
+        :root {
+            --bg-color: #fafafa;
+            --text-color: #1a1a1a;
+            --hover-color: #0000FF; /* Classic blue for links */
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Alte Haas Grotesk', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        /* 3. Layout & Typography */
+        main {
+            width: 90%;
+            max-width: 600px;
+            padding: 2rem 0;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 3rem;
+            font-weight: normal;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #888;
+        }
+
+        ul.project-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem; /* Space between links */
+        }
+
+        ul.project-list li a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-size: 2.5rem; /* Large, bold links for quick navigation */
+            font-weight: bold;
+            transition: color 0.2s ease, transform 0.2s ease;
+            display: inline-block;
+        }
+
+        /* Hover Effect */
+        ul.project-list li a:hover {
+            color: var(--hover-color);
+            transform: translateX(10px); /* Slight bump to the right */
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 600px) {
+            ul.project-list li a {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <h1>Index / Projects</h1>
+        
+        <ul class="project-list">
+            <li><a href="D6_HYL/index.html">D6_ HYL</a></li>
+            <li><a href="D7_MicroAdventures/index.html">D7_MicroAdventures</a></li>
+            <li><a href="D8_Planetarium/index.html">D8_Planetarium</a></li>
+            <li><a href="D9_StrangerTools/index.html">D9_StrangerTools</a></li>
+            <li><a href="K4_UeberDenDaechern/index.html">K4_UeberDenDaechern</a></li>
+        </ul>
+    </main>
+
+</body>
+</html>
