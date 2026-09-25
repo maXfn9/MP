@@ -28,7 +28,7 @@
         :root {
             --bg-color: #fafafa;
             --text-color: #1a1a1a;
-            --hover-color: #0000FF; /* Classic blue for links */
+            --hover-color: #0000FF; 
         }
 
         body {
@@ -65,13 +65,13 @@
             margin: 0;
             display: flex;
             flex-direction: column;
-            gap: 1.5rem; /* Space between links */
+            gap: 1.5rem;
         }
 
         ul.project-list li a {
             text-decoration: none;
             color: var(--text-color);
-            font-size: 2.5rem; /* Large, bold links for quick navigation */
+            font-size: 2.5rem;
             font-weight: bold;
             transition: color 0.2s ease, transform 0.2s ease;
             display: inline-block;
@@ -80,10 +80,9 @@
         /* Hover Effect */
         ul.project-list li a:hover {
             color: var(--hover-color);
-            transform: translateX(10px); /* Slight bump to the right */
+            transform: translateX(10px); 
         }
 
-        /* Mobile Responsiveness */
         @media (max-width: 600px) {
             ul.project-list li a {
                 font-size: 1.8rem;
@@ -97,10 +96,16 @@
         <h1>Index / Projects</h1>
         
         <ul class="project-list">
-            <li><a href="D6_HYL/index.html">D6_ HYL</a></li>
-            <li><a href="D7_MicroAdventures/index.html">D7_MicroAdventures</a></li>
+            <!-- External links open in a new tab -->
+            <li><a href="https://project16259816.tilda.ws/page86076666.html" target="_blank" rel="noopener noreferrer">D6_ HYL</a></li>
+            <li><a href="https://project16259816.tilda.ws/page86062186.html" target="_blank" rel="noopener noreferrer">D7_MicroAdventures</a></li>
+            
+            <!-- Local links for the video page and K4 -->
             <li><a href="D8_Planetarium/index.html">D8_Planetarium</a></li>
-            <li><a href="D9_StrangerTools/index.html">D9_StrangerTools</a></li>
+            
+            <!-- Note: Stranger Tools currently shares the same link as HYL in your prompt -->
+            <li><a href="https://project16259816.tilda.ws/page86076666.html" target="_blank" rel="noopener noreferrer">D9_StrangerTools</a></li>
+            
             <li><a href="K4_UeberDenDaechern/index.html">K4_UeberDenDaechern</a></li>
         </ul>
     </main>
